@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D970B612862382D0038A58D /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 8D970B602862382D0038A58D /* Models */; };
 		8DDEF2CA285900AB00BA81C9 /* DidacticHappinessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDEF2C9285900AB00BA81C9 /* DidacticHappinessApp.swift */; };
 		8DDEF2CC285900AB00BA81C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDEF2CB285900AB00BA81C9 /* ContentView.swift */; };
 		8DDEF2CE285900AC00BA81C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DDEF2CD285900AC00BA81C9 /* Assets.xcassets */; };
@@ -28,12 +29,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D970B612862382D0038A58D /* Models in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D970B5F2862382D0038A58D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8D9D18FA285901AE00D094B9 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
@@ -48,6 +57,7 @@
 				8D9D18FA285901AE00D094B9 /* Packages */,
 				8DDEF2C8285900AB00BA81C9 /* DidacticHappiness */,
 				8DDEF2C7285900AB00BA81C9 /* Products */,
+				8D970B5F2862382D0038A58D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +105,9 @@
 			dependencies = (
 			);
 			name = DidacticHappiness;
+			packageProductDependencies = (
+				8D970B602862382D0038A58D /* Models */,
+			);
 			productName = DidacticHappiness;
 			productReference = 8DDEF2C6285900AB00BA81C9 /* DidacticHappiness.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +136,8 @@
 				Base,
 			);
 			mainGroup = 8DDEF2BD285900AB00BA81C9;
+			packageReferences = (
+			);
 			productRefGroup = 8DDEF2C7285900AB00BA81C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -352,6 +367,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D970B602862382D0038A58D /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8DDEF2BE285900AB00BA81C9 /* Project object */;
 }

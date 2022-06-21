@@ -10,6 +10,7 @@ let package = Package(
         .library(
             name: "DidacticAppKit",
             targets: ["DidacticAppKit"]),
+        .library(name: "Models", targets: ["Models"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,5 +25,9 @@ let package = Package(
         .testTarget(
             name: "DidacticAppKitTests",
             dependencies: ["DidacticAppKit"]),
+
+            .target(
+                name: "Models",
+                dependencies: [])
     ]
 )

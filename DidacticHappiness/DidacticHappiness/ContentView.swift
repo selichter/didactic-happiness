@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
+import Models
 
 struct ContentView: View {
+    @State private var data: [Prompt] = samplePrompts
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("See if a change registers...")
+            List(data, id: \.id) { prompt in
+                Text(prompt.text)
+            }
         }
     }
 }
